@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f9fafb;
+  color:#1f2937;
+  scroll-behavior:smooth;
+}
+
+/* Navbar */
+nav{
+  background:linear-gradient(90deg,#1e3a8a,#2563eb);
+  padding:15px 30px;
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:flex-end;
+}
+
+nav ul li{
+  margin-left:25px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#fde68a;
+}
+
+/* Sections */
+section{
+  padding:95px 40px;
+}
+
+h1,h2,h3{
+  color:#1e3a8a;
+  margin-bottom:15px;
+}
+
+p{
+  line-height:1.7;
+}
+
+/* Home */
+#home{
+  text-align:center;
+  padding-top:130px;
+}
+
+#home h1 span{
+  color:#2563eb;
+}
+
+/* Skills */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.skill{
+  background:#e0e7ff;
+  color:#1e3a8a;
+  padding:10px 16px;
+  border-radius:6px;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.skill:hover{
+  background:#2563eb;
+  color:white;
+  transform:translateY(-3px);
+}
+
+/* Cards */
+.card{
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  margin-bottom:18px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 20px rgba(37,99,235,0.15);
+}
+
+/* Lists */
+ul{
+  padding-left:20px;
+}
+
+ul li{
+  margin-bottom:6px;
+}
+
+/* Contact */
+#contact p{
+  transition:0.3s;
+}
+
+#contact p:hover{
+  color:#2563eb;
+}
+
+/* Footer */
+footer{
+  background:#1e3a8a;
+  color:white;
+  text-align:center;
+  padding:16px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#internships">Internships</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <h1>Hello, I'm <span>Akshidha</span></h1>
+  <p>ECE Student | Aspiring Web Developer</p>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am an Electronics and Communication Engineering student with a strong interest
+    in web development and software engineering. I have hands-on experience in
+    programming languages such as C, C++, and SQL, along with front-end technologies
+    like HTML, CSS, and JavaScript.
+  </p>
+  <br>
+  <p>
+    I enjoy building simple yet meaningful web applications that solve real-world
+    problems. Through academic projects, personal practice, and multiple internships,
+    I have developed a good understanding of responsive design, basic interactivity,
+    and clean code structure. I am always eager to learn new technologies, improve my
+    problem-solving skills, and gain industry exposure through practical experience.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">C</div>
+    <div class="skill">C++</div>
+    <div class="skill">SQL</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card"><h3>Blood Donation Website</h3><p>Web application to help users find blood donors during emergencies.</p></div>
+  <div class="card"><h3>Online Complaint Registration & Management System</h3><p>System to register, track, and manage complaints efficiently.</p></div>
+  <div class="card"><h3>BookSky – Online Book Page</h3><p>A simple webpage to display and manage books.</p></div>
+  <div class="card"><h3>Food Wastage Management System</h3><p>Project focused on reducing food wastage.</p></div>
+  <div class="card"><h3>Simple Quiz Application</h3><p>Basic quiz app using HTML, CSS, and JavaScript.</p></div>
+  <div class="card"><h3>Rock Paper Scissors Game (C++)</h3><p>Console-based game developed using C++.</p></div>
+  <div class="card"><h3>60-Second Website</h3><p>Creative website that exists only for 60 seconds.</p></div>
+  <div class="card"><h3>Tribute Page – Virat Kohli</h3><p>Tribute webpage highlighting achievements.</p></div>
+  <div class="card"><h3>Travel Booking Page</h3><p>Responsive travel booking interface.</p></div>
+</section>
+
+<section id="internships">
+  <h2>Internship Experience</h2>
+  <div class="card">
+    Completed web development internships at <b>CodeAlpha, CodSoft, Oasis Infobyte</b>,
+    and <b>Cognifyz Technologies</b>. Currently undergoing internship at
+    <b>Prodigy Infotech</b>.
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="card">
+    <ul>
+      <li>Generative AI for Beginners – HP LIFE</li>
+      <li>C++, HTML, CSS, JavaScript – Infosys Springboard</li>
+      <li>Time Management</li>
+      <li>Agile Software Engineering</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: akshidha@example.com</p>
+  <p>LinkedIn: linkedin.com/in/akshidha</p>
+</section>
+
+<footer>
+  © 2025 Akshidha | Prodigy Infotech Task-04
+</footer>
+
+</body>
+</html>
